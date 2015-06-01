@@ -1,0 +1,110 @@
+/* line 11, ../compass/sass/style.scss */
+header {
+  display: block;
+  margin: 4px;
+  min-height: 100px;
+  background: white;
+}
+
+/* line 17, ../compass/sass/style.scss */
+footer {
+  height: 25%;
+  background: #45ba8e;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 24, ../compass/sass/style.scss */
+.search-input {
+  position: relative;
+  display: inline-block;
+  margin: 1px;
+  position: absolute;
+  width: 590px;
+  height: 40px;
+  font-family: proxima;
+  font-size: 2rem;
+  color: #333333;
+  border: 1px solid #989898;
+  margin: -5px 5px 0;
+  background-color: white;
+}
+
+/* line 38, ../compass/sass/style.scss */
+.search {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100px;
+  position: absolute;
+  width: 475px;
+  height: 35px;
+  font-family: proxima;
+  font-size: 2rem;
+  color: #333333;
+  border: none;
+  outline: none;
+}
+
+/* line 52, ../compass/sass/style.scss */
+.float-right {
+  float: right;
+}
+
+/* line 55, ../compass/sass/style.scss */
+.mhe-logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -10px;
+  border: 0;
+  opacity: 1;
+}
+
+/* line 62, ../compass/sass/style.scss */
+.username {
+  font-family: proxima;
+  font-size: 2rem;
+  color: #333333;
+}
+
+/* line 67, ../compass/sass/style.scss */
+.notifications {
+  text-align: center;
+  color: white;
+  background-color: #45ba8e;
+  padding: 0 auto;
+  margin: 0;
+  height: 22px;
+  width: 22px;
+  line-height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* line 80, ../compass/sass/style.scss */
+figcaption {
+  color: white;
+}
+
+@media all and (max-width: 640px) {
+  /* line 84, ../compass/sass/style.scss */
+  #page {
+    flex-flow: column;
+  }
+}
+/* line 88, ../compass/sass/style.scss */
+ul.master_navigation {
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+  margin: 0.5em 0;
+  padding: 0;
+}
+/* line 95, ../compass/sass/style.scss */
+ul.master_navigation li {
+  display: inline-block;
+  padding: 0 2.5%;
+}

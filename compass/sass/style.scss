@@ -1,0 +1,99 @@
+//colors
+$black: #000;
+$color_keppel_approx: #45ba8e;
+$color_mine_shaft_approx: #333333;
+$color_mountain_mist_approx: #989898;
+$white: white;
+
+//fonts
+$font_0: proxima;
+
+header {
+	display: block;
+	margin: 4px;
+	min-height: 100px;
+	background: $white;
+}
+footer {
+	height: 25%;
+	background: $color_keppel_approx;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.search-input {
+	position: relative;
+	display: inline-block;
+	margin: 1px;
+	position: absolute;
+	width: 590px;
+	height: 40px;
+	font-family: $font_0;
+	font-size: 2rem;
+	color: $color_mine_shaft_approx;
+	border: 1px solid $color_mountain_mist_approx;
+	margin: -5px 5px 0;
+	background-color: $white;
+}
+.search {
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100px;
+	position: absolute;
+	width: 475px;
+	height: 35px;
+	font-family: $font_0;
+	font-size: 2rem;
+	color: $color_mine_shaft_approx;
+	border: none;
+	outline: none;
+}
+.float-right {
+	float: right;
+}
+.mhe-logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -10px;
+	border: 0;
+	opacity: 1;
+}
+.username {
+	font-family: $font_0;
+	font-size: 2rem;
+	color: $color_mine_shaft_approx;
+}
+.notifications {
+	text-align: center;
+	color: $white;
+	background-color: $color_keppel_approx;
+	padding: 0 auto;
+	margin: 0;
+	height: 22px;
+	width: 22px;
+	line-height: 25px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+figcaption {
+	color: $white;
+}
+@media all and(max-width: 640px) {
+	#page {
+		flex-flow: column;
+	}
+}
+ul.master_navigation {
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+	list-style: none;
+	margin: 0.5em 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		padding: 0 2.5%;
+	}
+}
