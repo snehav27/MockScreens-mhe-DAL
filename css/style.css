@@ -1,12 +1,12 @@
-/* line 11, ../compass/sass/style.scss */
+/* line 15, ../compass/sass/style.scss */
 header {
   display: block;
-  margin: 4px;
   min-height: 100px;
   background: white;
+  padding: 10px;
 }
 
-/* line 17, ../compass/sass/style.scss */
+/* line 21, ../compass/sass/style.scss */
 footer {
   height: 25%;
   background: #45ba8e;
@@ -15,15 +15,14 @@ footer {
   bottom: 0;
 }
 
-/* line 24, ../compass/sass/style.scss */
+/* line 28, ../compass/sass/style.scss */
 .search-input {
   position: relative;
   display: inline-block;
-  margin: 1px;
   position: absolute;
   width: 590px;
   height: 40px;
-  font-family: proxima;
+  font-family: sans-serif;
   font-size: 2rem;
   color: #333333;
   border: 1px solid #989898;
@@ -31,7 +30,7 @@ footer {
   background-color: white;
 }
 
-/* line 38, ../compass/sass/style.scss */
+/* line 41, ../compass/sass/style.scss */
 .search {
   top: 0;
   left: 0;
@@ -40,19 +39,19 @@ footer {
   position: absolute;
   width: 475px;
   height: 35px;
-  font-family: proxima;
+  font-family: sans-serif;
   font-size: 2rem;
   color: #333333;
   border: none;
   outline: none;
 }
 
-/* line 52, ../compass/sass/style.scss */
+/* line 55, ../compass/sass/style.scss */
 .float-right {
   float: right;
 }
 
-/* line 55, ../compass/sass/style.scss */
+/* line 58, ../compass/sass/style.scss */
 .mhe-logo {
   display: inline-block;
   vertical-align: middle;
@@ -61,14 +60,14 @@ footer {
   opacity: 1;
 }
 
-/* line 62, ../compass/sass/style.scss */
-.username {
-  font-family: proxima;
+/* line 65, ../compass/sass/style.scss */
+.font {
+  font-family: sans-serif;
   font-size: 2rem;
   color: #333333;
 }
 
-/* line 67, ../compass/sass/style.scss */
+/* line 70, ../compass/sass/style.scss */
 .notifications {
   text-align: center;
   color: white;
@@ -83,18 +82,83 @@ footer {
   right: 10px;
 }
 
-/* line 80, ../compass/sass/style.scss */
+/* line 83, ../compass/sass/style.scss */
 figcaption {
   color: white;
 }
 
+/* line 86, ../compass/sass/style.scss */
+.image-container {
+  position: relative;
+}
+
+/* line 89, ../compass/sass/style.scss */
+.images {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+/* line 94, ../compass/sass/style.scss */
+.images img {
+  max-width: 100%;
+  width: 33.48333%;
+  height: auto;
+  display: inline;
+  margin: 0 0 -3px;
+  border: none;
+  opacity: 0.2;
+}
+/* line 102, ../compass/sass/style.scss */
+.images img:first-child {
+  opacity: 0.2;
+}
+/* line 105, ../compass/sass/style.scss */
+.images img:nth-child(2) {
+  opacity: 1;
+}
+/* line 108, ../compass/sass/style.scss */
+.images img:not(:nth-child(2)) {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+/* line 113, ../compass/sass/style.scss */
+.images i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 4em;
+  z-index: 9;
+}
+/* line 124, ../compass/sass/style.scss */
+.images i:hover {
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+/* line 129, ../compass/sass/style.scss */
+.images i:nth-child(1) {
+  left: 0.5em;
+}
+/* line 132, ../compass/sass/style.scss */
+.images i:nth-child(2) {
+  right: 0.5em;
+}
+
+/* line 137, ../compass/sass/style.scss */
+.center {
+  text-align: center;
+}
+
 @media all and (max-width: 640px) {
-  /* line 84, ../compass/sass/style.scss */
+  /* line 141, ../compass/sass/style.scss */
   #page {
     flex-flow: column;
   }
 }
-/* line 88, ../compass/sass/style.scss */
+/* line 145, ../compass/sass/style.scss */
 ul.master_navigation {
   font-size: 100%;
   font-weight: bold;
@@ -103,8 +167,19 @@ ul.master_navigation {
   margin: 0.5em 0;
   padding: 0;
 }
-/* line 95, ../compass/sass/style.scss */
+/* line 152, ../compass/sass/style.scss */
 ul.master_navigation li {
+  font-family: sans-serif;
   display: inline-block;
   padding: 0 2.5%;
+}
+
+/* line 158, ../compass/sass/style.scss */
+.icon-arrow-left4:before {
+  content: "\e6d0";
+}
+
+/* line 161, ../compass/sass/style.scss */
+.icon-arrow-right4:before {
+  content: "\e6d3";
 }

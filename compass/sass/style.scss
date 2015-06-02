@@ -4,15 +4,19 @@ $color_keppel_approx: #45ba8e;
 $color_mine_shaft_approx: #333333;
 $color_mountain_mist_approx: #989898;
 $white: white;
+$gray: gray;
+$white_80: rgba(255, 255, 255, 0.8);
+$black_20: rgba(0, 0, 0, 0.2);
+$black_70: rgba(0, 0, 0, 0.7);
 
 //fonts
-$font_0: proxima;
+$font_0: sans-serif;
 
 header {
 	display: block;
-	margin: 4px;
 	min-height: 100px;
 	background: $white;
+	padding: 10px;
 }
 footer {
 	height: 25%;
@@ -24,7 +28,6 @@ footer {
 .search-input {
 	position: relative;
 	display: inline-block;
-	margin: 1px;
 	position: absolute;
 	width: 590px;
 	height: 40px;
@@ -59,7 +62,7 @@ footer {
 	border: 0;
 	opacity: 1;
 }
-.username {
+.font {
 	font-family: $font_0;
 	font-size: 2rem;
 	color: $color_mine_shaft_approx;
@@ -80,6 +83,60 @@ footer {
 figcaption {
 	color: $white;
 }
+.image-container {
+	position: relative;
+}
+.images {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	img {
+		max-width: 100%;
+		width: 33.48333%;
+		height: auto;
+		display: inline;
+		margin: 0 0 -3px;
+		border: none;
+		opacity: 0.2;
+		&:first-child {
+			opacity: 0.2;
+		}
+		&:nth-child(2) {
+			opacity: 1;
+		}
+		&:not(:nth-child(2)) {
+			  -webkit-filter: grayscale(1);
+			filter: grayscale(1);
+		}
+	}
+	i {
+		position: absolute;
+		top: 50%;
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(-50%);
+		color: $white_80;
+		cursor: pointer;
+		//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 0 10px $black_20;
+		font-size: 4em;
+		z-index: 9;
+		&:hover {
+			color: $white;
+			//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: 0 0 10px $black_70;
+		}
+		&:nth-child(1) {
+			left: 0.5em;
+		}
+		&:nth-child(2) {
+			right: 0.5em;
+		}
+	}
+}
+.center {
+	text-align: center;
+}
 @media all and(max-width: 640px) {
 	#page {
 		flex-flow: column;
@@ -93,7 +150,14 @@ ul.master_navigation {
 	margin: 0.5em 0;
 	padding: 0;
 	li {
+		font-family: $font_0;
 		display: inline-block;
 		padding: 0 2.5%;
 	}
+}
+.icon-arrow-left4:before {
+	content: "\e6d0";
+}
+.icon-arrow-right4:before {
+	content: "\e6d3";
 }
